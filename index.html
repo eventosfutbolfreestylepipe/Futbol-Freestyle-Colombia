@@ -4,185 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pipe Shows | Fútbol Freestyle Colombia</title>
-    <!-- Fuentes Tipográficas: Oswald (Titulares) e Inter (Cuerpo) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Fuentes Premium Sports -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- NAVEGACIÓN -->
-    <nav class="navbar">
+    <header class="navbar">
         <div class="logo">
             <span>FÚTBOL FREESTYLE COLOMBIA</span>
             <strong>PIPE SHOWS</strong>
         </div>
-        <ul class="nav-links">
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#reaccion">Shows</a></li>
-            <li><a href="#eventos">Eventos</a></li>
-            <li><a href="#galeria">Galería</a></li>
-        </ul>
-        <a href="#contacto" class="btn-nav">COTIZAR</a>
+        <nav class="nav-links">
+            <a href="#hero">Inicio</a>
+            <a href="#servicios">Experiencias</a>
+            <a href="#galeria">Eventos</a>
+            <a href="#contacto" class="btn-nav">Cotizar</a>
+        </nav>
         <div class="menu-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-
-    <!-- 1. HERO / PRIMERA PANTALLA -->
-    <header id="hero" class="hero section-dark">
-        <div class="hero-container container">
-            <div class="hero-content fade-in">
-                <span class="tag">FÚTBOL FREESTYLE · SHOWS · EXPERIENCIAS</span>
-                <h1>MUCHO MÁS<br>QUE FÚTBOL.</h1>
-                <p>Shows de freestyle que sorprenden,<br>conectan y hacen participar.</p>
-                <a href="#contacto" class="btn-primary">COTIZAR MI EVENTO &rarr;</a>
-            </div>
-            <!-- Imagen del jugador recortada -->
-            <div class="hero-image fade-in-right">
-                <img src="https://images.unsplash.com/photo-1518605368461-1e1e3eceb532?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pipe Freestyle Football" class="player-cutout">
-            </div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div>
         </div>
     </header>
 
-    <!-- 2. LA REACCIÓN (Cinematográfica) -->
-    <section id="reaccion" class="reaction-section">
-        <div class="reaction-overlay"></div>
-        <div class="reaction-content container fade-in-up">
-            <h2>NO ES SOLO<br>UN SHOW.</h2>
-            <h2 class="accent-text">ES UNA EXPERIENCIA.</h2>
-            <p>Freestyle, interacción y espectáculo<br>para hacer que el público sea parte del momento.</p>
+    <!-- 1. HERO Y SLIDESHOW CINEMATOGRÁFICO -->
+    <main id="hero" class="hero">
+        
+        <!-- SLIDESHOW DE RECUERDOS (Fondo) -->
+        <div class="cinematic-slideshow">
+            <!-- Pon aquí tus 11 imágenes. Se irán alternando por JS -->
+            <img src="evento1.jpg" class="slide active" alt="Experiencia 1">
+            <img src="evento2.jpg" class="slide" alt="Experiencia 2">
+            <img src="evento3.jpg" class="slide" alt="Experiencia 3">
+            <img src="evento4.jpg" class="slide" alt="Experiencia 4">
+            <img src="evento5.jpg" class="slide" alt="Experiencia 5">
+            <img src="evento6.jpg" class="slide" alt="Experiencia 6">
+            <img src="evento7.jpg" class="slide" alt="Experiencia 7">
+            <img src="evento8.jpg" class="slide" alt="Experiencia 8">
+            <img src="evento9.jpg" class="slide" alt="Experiencia 9">
+            <img src="evento10.jpg" class="slide" alt="Experiencia 10">
+            <img src="evento11.jpg" class="slide" alt="Experiencia 11">
         </div>
-    </section>
 
-    <!-- 3. QUÉ OFRECE EL SHOW -->
-    <section id="ofrece" class="offers-section container section-padding">
-        <div class="section-header fade-in">
-            <h2 class="editorial-title">FREESTYLE.<br>PARTICIPACIÓN.<br>ESPECTÁCULO.</h2>
-        </div>
-        <div class="offers-grid">
-            <div class="offer-card fade-in-up">
-                <span class="number">01 — HABILIDAD</span>
-                <p>Freestyle football, dominio del balón y trucos visuales.</p>
-            </div>
-            <div class="offer-card fade-in-up delay-1">
-                <span class="number">02 — INTERACCIÓN</span>
-                <p>Momentos donde el público puede participar y sentirse parte del show.</p>
-            </div>
-            <div class="offer-card fade-in-up delay-2">
-                <span class="number">03 — EXPERIENCIA</span>
-                <p>Una presentación adaptable al tipo de evento y público.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. TIPOS DE EVENTOS -->
-    <section id="eventos" class="events-section section-dark section-padding">
-        <div class="container">
-            <h2 class="editorial-title fade-in">¿DÓNDE LLEVAMOS<br>EL SHOW?</h2>
-            <div class="events-grid">
-                <div class="event-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Colegios">
-                    <div class="event-info">
-                        <h3>01<br>COLEGIOS</h3>
-                    </div>
-                </div>
-                <div class="event-card fade-in delay-1">
-                    <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Empresas">
-                    <div class="event-info">
-                        <h3>02<br>EMPRESAS</h3>
-                    </div>
-                </div>
-                <div class="event-card fade-in delay-2">
-                    <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Eventos Deportivos">
-                    <div class="event-info">
-                        <h3>03<br>EVENTOS DEPORTIVOS</h3>
-                    </div>
-                </div>
-                <div class="event-card fade-in delay-3">
-                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Celebraciones">
-                    <div class="event-info">
-                        <h3>04<br>CELEBRACIONES Y EVENTOS</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. EL SHOW EN ACCIÓN -->
-    <section id="galeria" class="gallery-section container section-padding">
-        <h2 class="editorial-title fade-in">MIRA LO QUE<br>PASA CUANDO<br>EMPIEZA EL SHOW.</h2>
-        <div class="gallery-grid fade-in-up">
-            <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-tall" alt="Show Action 1">
-            <img src="https://images.unsplash.com/photo-1516731415730-0c607149933a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Show Action 2">
-            <img src="https://images.unsplash.com/photo-1431324155629-1a6d0a11f4d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Show Action 3">
-        </div>
-    </section>
-
-    <!-- 6. PRUEBA SOCIAL -->
-    <section class="social-proof section-dark section-padding">
-        <div class="container text-center fade-in">
-            <h2 class="editorial-title">YA LO HAN<br>VIVIDO.</h2>
-            <!-- Espacio preparado para testimonios o logos -->
-            <div class="testimonials-placeholder">
-                <p class="secondary-text">[ Aquí irán fotografías de reacciones, logos de clientes y testimonios ]</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. DIFERENCIAL -->
-    <section class="differential-section container section-padding text-center fade-in">
-        <h2 class="editorial-title">NO LLEVAMOS<br>SOLO UN JUGADOR.</h2>
-        <p class="big-p">Llevamos una experiencia diseñada para conectar con el público.</p>
-        <div class="concept-tags">
-            <span>SHOW</span>
-            <span>INTERACCIÓN</span>
-            <span>ENERGÍA</span>
-            <span>ADAPTABILIDAD</span>
-        </div>
-    </section>
-
-    <!-- 8 & 9. CTA FINAL Y FORMULARIO -->
-    <section id="contacto" class="final-cta section-dark section-padding">
-        <div class="container form-layout">
-            <div class="cta-text fade-in-right">
-                <h2 class="massive-title">¿TIENES<br>UN EVENTO?</h2>
-                <p>Cuéntanos qué estás planeando<br>y construyamos el show.</p>
+        <!-- CONTENIDO TEXTUAL -->
+        <div class="hero-content fade-in-up">
+            <h1>MUCHO MÁS<br>QUE FÚTBOL.</h1>
+            <p class="subtitle">Experiencias que sorprenden,<br>conectan y hacen participar.</p>
+            
+            <div class="slogan-box">
+                SHOW DE FREESTYLE APTO PARA TODO PÚBLICO Y EDADES.
             </div>
             
-            <div class="form-container fade-in-up">
-                <form action="#" method="POST" class="quote-form">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="text" placeholder="Empresa / Institución (Opcional)">
-                    <div class="form-row">
-                        <select required>
-                            <option value="" disabled selected>Tipo de evento</option>
-                            <option value="colegio">Colegio</option>
-                            <option value="empresa">Empresa</option>
-                            <option value="deportivo">Deportivo</option>
-                            <option value="celebracion">Celebración</option>
-                        </select>
-                        <input type="text" placeholder="Ciudad" required>
-                    </div>
-                    <div class="form-row">
-                        <input type="date" required>
-                        <input type="number" placeholder="No. de asistentes" required>
-                    </div>
-                    <input type="tel" placeholder="Teléfono / WhatsApp" required>
-                    <textarea placeholder="Mensaje" rows="3" required></textarea>
-                    <button type="submit" class="btn-primary btn-full">SOLICITAR COTIZACIÓN &rarr;</button>
-                </form>
+            <a href="#contacto" class="btn-cta">
+                COTIZAR MI EVENTO <span>&#10142;</span>
+            </a>
+        </div>
+
+        <!-- VISUALES: JUGADOR Y VIDEO -->
+        <div class="hero-visuals">
+            <!-- Tu silueta recortada en PNG -->
+            <img src="mi-foto.png" alt="Pipe Freestyle" class="player-img fade-in">
+            
+            <!-- Tu "Firma Visual" (Video con fondo negro, el CSS borrará el fondo) -->
+            <video src="truco.mp4" class="signature-video fade-in" autoplay muted loop playsinline poster="poster-truco.jpg"></video>
+        </div>
+    </main>
+
+    <!-- 2. SERVICIOS (Descubrimiento Rápido) -->
+    <section id="servicios" class="services-section container">
+        
+        <!-- Servicio 1: Empresas -->
+        <div class="service-row fade-in">
+            <div class="service-text">
+                <h2>EMPRESAS</h2>
+                <p>Convierte tu oficina, bodega o lugar de trabajo en diversión. Rompe la rutina con una experiencia diferente que integra a todo el equipo.</p>
+            </div>
+            <div class="service-img">
+                <img src="empresa.jpg" alt="Show para empresas">
+            </div>
+        </div>
+
+        <!-- Servicio 2: Activaciones (Destacado Marketing) -->
+        <div class="service-row reverse highlight-row fade-in">
+            <div class="service-text">
+                <span class="tag-marketing">HERRAMIENTA COMERCIAL</span>
+                <h2>ACTIVACIONES DE<br>MARCA Y VENTAS</h2>
+                <p>Usa el fútbol freestyle para llamar la atención, atraer más personas y generar oportunidades para vender más. El freestyle llama la atención, la atención genera tráfico, el tráfico se convierte en ventas.</p>
+            </div>
+            <div class="service-img">
+                <img src="activacion.jpg" alt="Activación de marca">
+            </div>
+        </div>
+
+        <!-- Servicio 3: Cumpleaños -->
+        <div class="service-row fade-in">
+            <div class="service-text">
+                <h2>CUMPLEAÑOS Y<br>FIESTAS INFANTILES</h2>
+                <p>Lleva alegría y asombro a tu celebración. Un show interactivo donde todos participan. Diversión pura apta para todas las edades.</p>
+            </div>
+            <div class="service-img">
+                <img src="cumpleanos.jpg" alt="Fiestas infantiles">
+            </div>
+        </div>
+
+        <!-- Servicio 4: Colegios y Eventos -->
+        <div class="service-row reverse fade-in">
+            <div class="service-text">
+                <h2>COLEGIOS<br>Y EVENTOS</h2>
+                <p>Lleva la emoción a tu colegio conectando con el público masivo, eventos deportivos y actividades institucionales con pura energía.</p>
+            </div>
+            <div class="service-img">
+                <img src="colegios.jpg" alt="Colegios y eventos grandes">
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Fútbol Freestyle Colombia - Pipe Shows. Todos los derechos reservados.</p>
+    <!-- 3. TRANSICIÓN CINEMATOGRÁFICA -->
+    <section class="cinematic-break">
+        <div class="cinematic-content fade-in-up">
+            <h2>NO ES SOLO<br>UN SHOW.</h2>
+            <h2 class="accent">ES UNA EXPERIENCIA.</h2>
+            <p>Freestyle, interacción y espectáculo para convertir un evento común en un momento que la gente recuerda.</p>
         </div>
+    </section>
+
+    <!-- 4. REACCIONES DEL PÚBLICO -->
+    <section id="galeria" class="reactions-section container">
+        <h2 class="section-title fade-in">MIRA LO QUE<br>PASA CUANDO<br>EMPIEZA EL SHOW.</h2>
+        
+        <div class="reactions-grid fade-in-up">
+            <!-- Fotos reales del público reaccionando -->
+            <img src="reaccion1.jpg" alt="Público sorprendido" class="tall">
+            <img src="reaccion2.jpg" alt="Niños participando">
+            <img src="reaccion3.jpg" alt="Gente sonriendo">
+            <img src="reaccion4.jpg" alt="Evento masivo" class="wide">
+        </div>
+    </section>
+
+    <!-- 5. PRUEBA SOCIAL -->
+    <section class="social-proof container fade-in">
+        <p class="subtitle-center">ELLOS YA VIVIERON LA EXPERIENCIA</p>
+        <div class="logos-grid">
+            <!-- Placeholders para logos de marcas/colegios -->
+            <div class="logo-box">Logo Cliente</div>
+            <div class="logo-box">Logo Cliente</div>
+            <div class="logo-box">Logo Cliente</div>
+            <div class="logo-box">Logo Cliente</div>
+        </div>
+    </section>
+
+    <!-- 6. CONTACTO Y CTA -->
+    <section id="contacto" class="contact-section">
+        <div class="container contact-grid">
+            <div class="contact-text fade-in">
+                <h2>¿TIENES<br>UN EVENTO?</h2>
+                <p>Cuéntanos qué estás planeando y construyamos el show a tu medida.</p>
+            </div>
+            
+            <form action="#" class="custom-form fade-in-up">
+                <div class="input-group">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="text" placeholder="Empresa / Institución">
+                </div>
+                <div class="input-group">
+                    <select required>
+                        <option value="" disabled selected>Tipo de evento...</option>
+                        <option value="empresa">Empresarial</option>
+                        <option value="activacion">Activación de Marca</option>
+                        <option value="cumpleanos">Cumpleaños</option>
+                        <option value="colegio">Colegio / Masivo</option>
+                    </select>
+                    <input type="text" placeholder="Ciudad" required>
+                </div>
+                <div class="input-group">
+                    <input type="date" required>
+                    <input type="number" placeholder="No. Asistentes (Aprox)">
+                </div>
+                <input type="tel" placeholder="WhatsApp / Teléfono" required>
+                <textarea rows="3" placeholder="Cuéntame un poco sobre tu evento..." required></textarea>
+                
+                <button type="submit" class="btn-cta w-100">
+                    SOLICITAR COTIZACIÓN <span>&#10142;</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 FÚTBOL FREESTYLE COLOMBIA - PIPE SHOWS.</p>
     </footer>
 
     <script src="script.js"></script>
